@@ -28,6 +28,11 @@ const routes = [
     name: 'JobDetails',
     component: JobDetails,
     props: true // without this the props cannot work on JobDetails.vue  props: ['id'],
+  },
+  // redirect 
+  {
+    path: '/all-jobs',
+    redirect: 'jobs',
   }
 ]
 

@@ -14,12 +14,18 @@ export default {
   data() {
     return {
       jobs: [
-        {title: 'ninja UX Designer', id: 1, details: 'lorem' },
-        {title: 'ninja Web Developer', id: 2, details: 'lorem' },
-        {title: 'ninja Vue Designer', id: 3, details: 'lorem' },
+        // {title: 'ninja UX Designer', id: 1, details: 'lorem' },
+        // {title: 'ninja Web Developer', id: 2, details: 'lorem' },
+        // {title: 'ninja Vue Designer', id: 3, details: 'lorem' },
 
       ]
     }
+  },
+  mounted() {
+    fetch('http://localhost:3000/jobs')
+    .then((res) => res.json())
+    .then( data => this.jobs = data) // fill the data with the content of json file get from res 
+    .catch(err => console.log(err.message)) 
   }
 }
 </script>

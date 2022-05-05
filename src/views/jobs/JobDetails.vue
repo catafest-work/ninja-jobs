@@ -1,8 +1,14 @@
 <template>
   <!-- <h1>Job Details Page</h1> -->
-  <h1>{{ job.title }}</h1>
-  <p>The job id is {{ id }}</p>
-  <p>{{ job.details }}</p>
+  <div v-if="job">
+    <h1>{{ job.title }}</h1>
+    <p>The job id is {{ id }}</p>
+    <p>{{ job.details }}</p>
+  </div>
+  <div v-else>
+    <p> Loading job details ... </p>
+  </div>
+
 </template>
 
 <script>
@@ -10,7 +16,7 @@ export default {
   props: ['id'],
   data() {
     return {
-      job: null
+      job: null // this cannot be null in the template area so can be check by v-id in div tag 
     }
   },
   mounted() {

@@ -7,8 +7,27 @@
     <router-link :to="{ name: 'Jobs'}" >Jobs</router-link> 
   </div>
   <!-- not here -->
+  <button @click="redirect">Redirect</button>
+  <button @click="back">Go back</button>
+  <button @click="forward">Go forward</button>
   <router-view/>
 </template>
+
+<script>
+export default {
+  methods: {
+    redirect() {
+      this.$router.push({ name: 'Home'}) // redirect with push using the defined name 
+    }, 
+    back() {
+      this.$router.go(-1) // go back from history , for -2 will step with 2 pages
+    }, 
+    forward() {
+      this.$router.go(1) // similar go back but use positive number for forward
+    },
+  }
+}
+</script>
 
 <style>
 #app {
@@ -35,4 +54,12 @@
   color: white;
   background: red;
 }
+
+button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
 </style>

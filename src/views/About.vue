@@ -1,0 +1,7 @@
+<template>
+  <div class="about">
+    <h1>This is an about page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolore necessitatibus, enim dolorum vel rem praesentium tempora harum recusandae tempore, pariatur consequatur cum quisquam mollitia aperiam, voluptate quaerat minima ipsa in voluptatem est? Mollitia perspiciatis molestiae, fugit error iste esse aut? Porro ullam dicta soluta. Reiciendis cumque, illo aut nobis esse eos libero beatae laborum id modi accusantium at earum possimus odio ducimus debitis iure aperiam deleniti porro eius non. Pariatur tenetur eveniet consequuntur recusandae sunt odit in corrupti maxime ut vero doloremque perspiciatis animi, porro molestias aut labore vel ea? Perspiciatis, odio ipsum quos voluptas voluptates cum. Nisi, repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, amet aut, sapiente, accusantium inventore eum error laborum dolore vitae saepe sunt sint. Quae nesciunt soluta eos recusandae iste? Facere illum eius dolorum praesentium quos, atque ducimus harum aspernatur laudantium fuga consequatur molestias ullam autem non tempore placeat sit possimus eum dignissimos? Odio natus eveniet omnis facilis fugiat, magni laudantium sit officia, ab error animi, numquam sunt! Placeat consequuntur quam fuga? Beatae facere, perferendis reiciendis minima quo deserunt enim sequi, tempore in neque odio. Odio hic veritatis ut perspiciatis iure ipsam voluptate. Fugiat non nihil rerum cumque accusamus, eum enim consequatur?</p>
+  </div>
+</template>

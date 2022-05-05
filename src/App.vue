@@ -1,10 +1,12 @@
 <template>
   <div id="nav">
+    <!-- the root nav area is here -->
     <router-link to="/">Home</router-link> |
     <!-- need to avoid multiple changes on source code ... see index.js const routes ... About implementation -->
     <router-link :to="{ name: 'About'}" >About</router-link> 
     <router-link :to="{ name: 'Jobs'}" >Jobs</router-link> 
   </div>
+  <!-- not here -->
   <router-view/>
 </template>
 

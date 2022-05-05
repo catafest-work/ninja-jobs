@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Jobs from '../views/jobs/Jobs.vue'
-//import JobDetails from '../views/jobs/JobDetails.vue'
+import JobDetails from '../views/jobs/JobDetails.vue'
 
 const routes = [
   {
@@ -23,11 +23,12 @@ const routes = [
     path: '/jobs',
     name: 'Jobs',
     component: Jobs
+  },
+  { path: '/jobs/:id', 
+    name: 'JobDetails',
+    component: JobDetails,
+    props: true // without this the props cannot work on JobDetails.vue  props: ['id'],
   }
-  // { path: '/jobs/:id', 
-  //   name: 'JobsDetails',
-  //   component: JobsDetails
-  // }
 ]
 
 const router = createRouter({
